@@ -49,12 +49,6 @@ def calcularDistanciaEuclidiana(instanciaTeste, instanciasTreinamento):
 def calcularDistanciaEuclidianaSpambase(instanciaTeste, instanciasTreinamento, qtdAtributos):
     distanciasEuclidianas = []
 
-    # print(qtdAtributos)
-    # print(instanciaTeste[qtdAtributos - 1])
-    # print(instanciasTreinamento[0][0])
-    # print(len(instanciasTreinamento))
-    # print(len(instanciasTreinamento[0]))
-
     for i in range(len(instanciasTreinamento)):
         somatorio = 0.0
         for j in range(qtdAtributos - 1):
@@ -63,9 +57,6 @@ def calcularDistanciaEuclidianaSpambase(instanciaTeste, instanciasTreinamento, q
         distanciasEuclidianas.append(distancia)
 
     distanciasEuclidianas.sort()
-
-    # print(instanciaTeste)
-    # print(distanciasEuclidianas[0])
 
     return distanciasEuclidianas
 
@@ -304,8 +295,10 @@ def main():
     porcentagemInstanciasTreinamento = 0.8
     k = [1, 3, 5, 7]
 
-    # baseDeDadosIris(porcentagemInstanciasTreinamento, k)
+    print("\n\nBase de dados Iris")
+    baseDeDadosIris(porcentagemInstanciasTreinamento, k)
 
+    print("\n\nBase de dados Spam")
     baseDeDadosSpam(porcentagemInstanciasTreinamento, k)
 
 
