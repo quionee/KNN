@@ -292,7 +292,7 @@ def baseDeDadosSpam(porcentagemInstanciasTreinamento, k):
 
 
 def main():
-    porcentagemInstanciasTreinamento = 0.8
+    porcentagemInstanciasTreinamento = 0.5
     k = [1, 3, 5, 7]
 
     print("\n\nBase de dados Iris")
